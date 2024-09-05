@@ -16,7 +16,7 @@ app.use('/api/v1/blog/*', async (c , next) => {
   const response = await verify(header, c.env.JWT_SECRET);
 
   if (response.email) {
-    next()
+    await next()
   }
 
   else {

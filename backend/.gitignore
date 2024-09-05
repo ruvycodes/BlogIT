@@ -1,6 +1,5 @@
 # prod
 dist/
-src/routes
 
 # dev
 .yarn/
